@@ -18,14 +18,14 @@ This application utilizes an **Ensemble Stacking Machine Learning model** (Rando
 
 st.write("---")
 
-# 2. Load Pipeline Artifacts (Fixed Pathing, File Extensions & Library choice)
+# 2. Secure Artifact Loading (Using standard pickle to match your notebook execution)
 MODEL_PATH = "models/steel_faults_ensemble.pkl"
 SCALER_PATH = "models/scaler.pkl"
 ENCODER_PATH = "models/label_encoder.pkl"
 
 @st.cache_resource
 def load_pipeline():
-    """Loads and caches the model artifacts seamlessly using standard pickle."""
+    """Loads and caches the model artifacts using standard pickle."""
     if os.path.exists(MODEL_PATH) and os.path.exists(SCALER_PATH) and os.path.exists(ENCODER_PATH):
         try:
             with open(MODEL_PATH, "rb") as f:
@@ -36,15 +36,15 @@ def load_pipeline():
                 label_encoder = pkl.load(f)
             return model, scaler, label_encoder
         except Exception as e:
-            st.error(f"Failed loading artifacts: {e}")
+            st.error(f"Error unpickling model weights: {e}")
             return None, None, None
     else:
-        st.error("❌ Pipeline artifacts missing in 'models/' directory. Check file placement!")
+        st.error("❌ Pipeline artifacts missing in 'models/' directory. Please ensure files are uploaded to GitHub!")
         return None, None, None
 
 model, scaler, label_encoder = load_pipeline()
 
-# 3. Form Layout Setup
+# 3. Form Input Grid
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -87,12 +87,12 @@ with col3:
 
 st.write("---")
 
-# 4. Pipeline Execution Logic
+# 4. Trigger Prediction Action
 if st.button("🚀 Analyze Steel Plate Defect", use_container_width=True):
     if model is not None:
         with st.spinner("Processing features through Stacking Ensemble..."):
             try:
-                # Features structured in explicit lowercase matching notebook preprocess transformations
+                # Features mapped explicitly to lowercase to match Colab transformations
                 input_data = {
                     "x_minimum": x_min, "x_maximum": x_max, "y_minimum": y_min, "y_maximum": y_max,
                     "pixels_areas": pixels_area, "x_perimeter": x_perimeter, "y_perimeter": y_perimeter,
@@ -108,31 +108,31 @@ if st.button("🚀 Analyze Steel Plate Defect", use_container_width=True):
                 
                 input_df = pd.DataFrame([input_data])
                 
-                # Feature engineering using the exact column labels saved in scaler training
+                # Replicating Colab feature engineering logic precisely
                 input_df['fault_width'] = np.abs(input_df['x_maximum'] - input_df['x_minimum'])
                 input_df['fault_length'] = np.abs(input_df['y_maximum'] - input_df['y_minimum'])
                 input_df['fault_area_estimate'] = input_df['fault_width'] * input_df['fault_length']
                 input_df['thickness'] = input_df['steel_plate_thickness'] / (input_df['pixels_areas'] + 1e-5)
                 
-                # Align feature ordering explicitly if required by checking model requirements
+                # Apply standard scaling transformations
                 scaled_features = scaler.transform(input_df)
                 
-                # Run predictions and extract probabilities
+                # Run predictions and extract target mapping
                 prediction_encoded = model.predict(scaled_features)
                 probabilities = model.predict_proba(scaled_features)[0]
                 
-                # Decode integer back to string fault label
+                # Revert encoding layer back to defect label
                 predicted_class_name = label_encoder.inverse_transform(prediction_encoded)[0]
                 prediction_label = predicted_class_name.upper().replace("_", " ")
                 confidence = float(np.max(probabilities)) * 100
                 
-                # Display Results UI
+                # Render Results Metrics
                 st.success("### Analysis Complete!")
                 metric_col1, metric_col2 = st.columns(2)
                 metric_col1.metric(label="Predicted Fault Category", value=prediction_label)
                 metric_col2.metric(label="Ensemble Model Confidence", value=f"{confidence:.2f}%")
                 
-                # Structural context hints
+                # Conditional Warning flags
                 if "SCATCH" in prediction_label or "SCRATCH" in prediction_label:
                     st.warning("⚠️ High structural risk. Inspect machine rollers for mechanical abrasive points.")
                 elif "BUMPS" in prediction_label or "PASTRY" in prediction_label:
@@ -140,5 +140,6 @@ if st.button("🚀 Analyze Steel Plate Defect", use_container_width=True):
                     
             except Exception as e:
                 st.error(f"Prediction failed inside Streamlit runtime: {str(e)}")
+                st.info("💡 Note: If you encounter a shape mismatch error, make sure you retrain your model in Colab without leaving the binary fault leakage columns in your X features matrix.")
     else:
-        st.error("Model state is uninitialized. Upload artifacts properly.")
+        st.error("Model engine failed to initialize. Check log alerts above.")
