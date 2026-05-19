@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle as pkl
+import joblib
 import os
 
 # 1. Page Configuration
@@ -19,27 +20,41 @@ This application utilizes an **Ensemble Stacking Machine Learning model** (Rando
 st.write("---")
 
 # 2. Secure Artifact Loading (Using standard pickle to match your notebook execution)
-MODEL_PATH = "models/steel_faults_ensemble.pkl"
-SCALER_PATH = "models/scaler.pkl"
-ENCODER_PATH = "models/label_encoder.pkl"
+MODEL_PATH = "steel classification/models/steel_faults_ensemble.pkl"
+SCALER_PATH = "steel classification/models/scaler.pkl"
+ENCODER_PATH = "steel classification/models/label_encoder.joblib"
 
 @st.cache_resource
 def load_pipeline():
-    """Loads and caches the model artifacts using standard pickle."""
-    if os.path.exists(MODEL_PATH) and os.path.exists(SCALER_PATH) and os.path.exists(ENCODER_PATH):
-        try:
+    """Loads and caches the model artifacts using pickle and joblib."""
+    try:
+        # Load model
+        if os.path.exists(MODEL_PATH):
             with open(MODEL_PATH, "rb") as f:
                 model = pkl.load(f)
+        else:
+            st.error(f"❌ Model file not found at {MODEL_PATH}")
+            return None, None, None
+        
+        # Load scaler
+        if os.path.exists(SCALER_PATH):
             with open(SCALER_PATH, "rb") as f:
                 scaler = pkl.load(f)
-            with open(ENCODER_PATH, "rb") as f:
-                label_encoder = pkl.load(f)
-            return model, scaler, label_encoder
-        except Exception as e:
-            st.error(f"Error unpickling model weights: {e}")
+        else:
+            st.error(f"❌ Scaler file not found at {SCALER_PATH}")
             return None, None, None
-    else:
-        st.error("❌ Pipeline artifacts missing in 'models/' directory. Please ensure files are uploaded to GitHub!")
+        
+        # Load label encoder (joblib format)
+        if os.path.exists(ENCODER_PATH):
+            label_encoder = joblib.load(ENCODER_PATH)
+        else:
+            st.error(f"❌ Label encoder file not found at {ENCODER_PATH}")
+            return None, None, None
+        
+        return model, scaler, label_encoder
+        
+    except Exception as e:
+        st.error(f"❌ Error loading model artifacts: {str(e)}")
         return None, None, None
 
 model, scaler, label_encoder = load_pipeline()
