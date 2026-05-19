@@ -18,29 +18,33 @@ This application utilizes an **Ensemble Stacking Machine Learning model** (Rando
 
 st.write("---")
 
-# 2. Load the Pipeline Artifacts Locally (Fixed Paths & Library to Match Notebook)
+# 2. Load Pipeline Artifacts (Fixed Pathing, File Extensions & Library choice)
 MODEL_PATH = "models/steel_faults_ensemble.pkl"
 SCALER_PATH = "models/scaler.pkl"
 ENCODER_PATH = "models/label_encoder.pkl"
 
 @st.cache_resource
 def load_pipeline():
-    """Loads and caches the pickle model artifacts seamlessly."""
+    """Loads and caches the model artifacts seamlessly using standard pickle."""
     if os.path.exists(MODEL_PATH) and os.path.exists(SCALER_PATH) and os.path.exists(ENCODER_PATH):
-        with open(MODEL_PATH, "rb") as f:
-            model = pkl.load(f)
-        with open(SCALER_PATH, "rb") as f:
-            scaler = pkl.load(f)
-        with open(ENCODER_PATH, "rb") as f:
-            label_encoder = pkl.load(f)
-        return model, scaler, label_encoder
+        try:
+            with open(MODEL_PATH, "rb") as f:
+                model = pkl.load(f)
+            with open(SCALER_PATH, "rb") as f:
+                scaler = pkl.load(f)
+            with open(ENCODER_PATH, "rb") as f:
+                label_encoder = pkl.load(f)
+            return model, scaler, label_encoder
+        except Exception as e:
+            st.error(f"Failed loading artifacts: {e}")
+            return None, None, None
     else:
-        st.error("❌ Pipeline artifacts missing in 'models/' directory. Please verify file placement!")
+        st.error("❌ Pipeline artifacts missing in 'models/' directory. Check file placement!")
         return None, None, None
 
 model, scaler, label_encoder = load_pipeline()
 
-# 3. Setup Columns for Input Layout
+# 3. Form Layout Setup
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -83,16 +87,16 @@ with col3:
 
 st.write("---")
 
-# 4. Trigger Prediction Logic
+# 4. Pipeline Execution Logic
 if st.button("🚀 Analyze Steel Plate Defect", use_container_width=True):
     if model is not None:
         with st.spinner("Processing features through Stacking Ensemble..."):
             try:
-                # Structure input data explicitly in LOWERCASE to match Colab Dataframe
+                # Features structured in explicit lowercase matching notebook preprocess transformations
                 input_data = {
                     "x_minimum": x_min, "x_maximum": x_max, "y_minimum": y_min, "y_maximum": y_max,
                     "pixels_areas": pixels_area, "x_perimeter": x_perimeter, "y_perimeter": y_perimeter,
-                    "sum_of_luminosity": sum_luminosity, "minimum_of_Luminosity": min_luminosity, # matches notebook typo if any
+                    "sum_of_luminosity": sum_luminosity, "minimum_of_luminosity": min_luminosity,
                     "maximum_of_luminosity": max_luminosity, "length_of_conveyer": length_conveyer,
                     "typeofsteel_a300": int(steel_a300), "typeofsteel_a400": int(steel_a400),
                     "steel_plate_thickness": steel_thickness, "edges_index": edges_index, "empty_index": empty_index,
@@ -102,27 +106,20 @@ if st.button("🚀 Analyze Steel Plate Defect", use_container_width=True):
                     "luminosity_index": luminosity_index, "sigmoidofareas": sigmoid_areas
                 }
                 
-                # Double-check notebook casing variations dynamically:
-                # In your notebook df.columns listed 'minimum_of_luminosity' as lowercase
-                input_data = {k.lower(): v for k, v in input_data.items()}
-                
                 input_df = pd.DataFrame([input_data])
                 
-                # Feature Engineering matching exactly the notebook definitions
-                input_df['fault_width'] = input_df['x_maximum'] - input_df['x_minimum']
-                input_df['fault_length'] = input_df['y_maximum'] - input_df['y_minimum']
+                # Feature engineering using the exact column labels saved in scaler training
+                input_df['fault_width'] = np.abs(input_df['x_maximum'] - input_df['x_minimum'])
+                input_df['fault_length'] = np.abs(input_df['y_maximum'] - input_df['y_minimum'])
                 input_df['fault_area_estimate'] = input_df['fault_width'] * input_df['fault_length']
                 input_df['thickness'] = input_df['steel_plate_thickness'] / (input_df['pixels_areas'] + 1e-5)
                 
-                # Scale features using the saved production scaler
+                # Align feature ordering explicitly if required by checking model requirements
                 scaled_features = scaler.transform(input_df)
                 
-                # Convert back to DataFrame with explicit feature names if your model tracks them
-                scaled_features_df = pd.DataFrame(scaled_features, columns=input_df.columns)
-                
                 # Run predictions and extract probabilities
-                prediction_encoded = model.predict(scaled_features_df)
-                probabilities = model.predict_proba(scaled_features_df)[0]
+                prediction_encoded = model.predict(scaled_features)
+                probabilities = model.predict_proba(scaled_features)[0]
                 
                 # Decode integer back to string fault label
                 predicted_class_name = label_encoder.inverse_transform(prediction_encoded)[0]
@@ -143,3 +140,5 @@ if st.button("🚀 Analyze Steel Plate Defect", use_container_width=True):
                     
             except Exception as e:
                 st.error(f"Prediction failed inside Streamlit runtime: {str(e)}")
+    else:
+        st.error("Model state is uninitialized. Upload artifacts properly.")
