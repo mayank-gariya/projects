@@ -133,7 +133,7 @@ if st.button("🚀 Analyze Steel Plate Defect", use_container_width=True):
                 metric_col2.metric(label="Ensemble Model Confidence", value=f"{confidence:.2f}%")
                 
                 # Conditional Warning flags
-                if "SCATCH" in prediction_label or "SCRATCH" in prediction_label:
+                if "SCRATCH" in prediction_label or "SCRATCH" in prediction_label:
                     st.warning("⚠️ High structural risk. Inspect machine rollers for mechanical abrasive points.")
                 elif "BUMPS" in prediction_label or "PASTRY" in prediction_label:
                     st.info("ℹ️ Surface irregularity detected. Check raw slab cooling rates.")
