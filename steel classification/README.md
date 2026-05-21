@@ -314,8 +314,8 @@ I'm always open to collaborations and discussions! Feel free to reach out throug
 <div align="center">
 
 [![GitHub](https://img.shields.io/badge/GitHub-mayank--gariya-black?style=for-the-badge&logo=github)](https://github.com/mayank-gariya)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mayank%20Gariya-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/mayank-gariya)
-[![Twitter](https://img.shields.io/badge/Twitter-@mayank__gariya-1DA1F2?style=for-the-badge&logo=twitter)](https://twitter.com/mayank_gariya)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mayank%20Gariya-blue?style=for-the-badge&logo=linkedin)](www.linkedin.com/in/mayank-gariya-564124401)
+[![Twitter](https://img.shields.io/badge/Twitter-@mayank__gariya-1DA1F2?style=for-the-badge&logo=twitter)](https://twitter.com/https://x.com/GariyaMayank77)
 [![Email](https://img.shields.io/badge/Email-Contact%20Me-red?style=for-the-badge&logo=gmail)](mailto:mayank@example.com)
 
 </div>
