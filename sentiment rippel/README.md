@@ -6,13 +6,13 @@
 
 ## The Story Behind This Project
 
-Hello, I'm **Mayank Gariya**, and I want to share the journey of building Sentiment Ripple—a project that explores one of the most fascinating (and sometimes troubling) phenomena in our connected world: **how negative sentiment spreads through communities**.
+Hello, I'm **Mayank Gariya**, and I want to share the journey of building Sentiment Ripple—a project that explores one of the most fascinating (and sometimes troubling) phenomena in our connected world.
 
 ### Why Did I Build This?
 
-I started this project with a simple observation: when one person expresses a negative sentiment online, how does it influence others? Through multiple modeling iterations and countless experiments, I discovered something interesting—it's not just about the initial message. It's about **the interplay between the message strength, individual biases, and environmental factors** that determine how people ultimately respond.
+I started this project with a simple observation: when one person expresses a negative sentiment online, how does it influence others? Through multiple modeling iterations and countless experiments, I set out to understand and simulate this phenomenon.
 
-The journey wasn't straightforward. I tried numerous approaches, refined my models, adjusted my datasets, and pivoted my thinking several times. But each iteration brought me closer to something meaningful: a visualization that doesn't just predict sentiment, but **shows you the ripple effect in real-time**.
+The journey wasn't straightforward. I tried numerous approaches, refined my models, adjusted my datasets, and pivoted my thinking several times. But each iteration brought me closer to something meaningful.
 
 ### What This Project Does
 
@@ -68,25 +68,16 @@ Each iteration taught me something new about how sentiment classification works 
 
 ## 🛠️ Tech Stack
 
-<div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-
-### Core ML & Data Science
-- ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white) **Scikit-learn** - Machine learning pipeline & logistic regression
-- ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white) **NumPy** - Numerical computing
-- ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) **Pandas** - Data manipulation & analysis
-
-### Visualization & UI
-- ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white) **Matplotlib** - Data visualization & chart generation
-- ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white) **Plotly** - Interactive analytics
-- ![Gradio](https://img.shields.io/badge/Gradio-FDB750?style=for-the-badge&logo=gradio&logoColor=white) **Gradio** - Interactive web interface
-
-### NLP & Text Processing
-- ![NLTK](https://img.shields.io/badge/NLTK-3FC051?style=for-the-badge&logo=python&logoColor=white) **NLTK** - Natural Language Toolkit for text processing
-
-### Deployment
-- ![HuggingFace](https://img.shields.io/badge/🤗_HuggingFace_Spaces-FFD21E?style=for-the-badge&logo=huggingface&logoColor=white) **HuggingFace Spaces** - Live demo hosting
-
-</div>
+| **Category** | **Technology** | **Purpose** |
+|:---:|:---|:---|
+| **ML & Data Science** | Scikit-learn | Machine learning pipeline & logistic regression |
+| | NumPy | Numerical computing |
+| | Pandas | Data manipulation & analysis |
+| **Visualization & UI** | Matplotlib | Data visualization & chart generation |
+| | Plotly | Interactive analytics |
+| | Gradio | Interactive web interface |
+| **NLP & Text Processing** | NLTK | Natural Language Toolkit for text processing |
+| **Deployment** | HuggingFace Spaces | Live demo hosting |
 
 ---
 
@@ -100,7 +91,13 @@ sentiment_ripple/
 ├── logistic_regression_pipeline.pkl    # Pre-trained ML model
 ├── requirements.txt                    # Python dependencies
 ├── datasets/                           # Training data directory
-├── src/                                # Utility functions (if applicable)
+├── src/                                # Visual assets and results
+│   ├── v1/
+│   │   ├── image.png                   # V1 Model demonstration
+│   │   └── result.png                  # V1 Results showcase
+│   └── v2/
+│       ├── result2.png                 # V2 Results (iteration 1)
+│       └── result3.png                 # V2 Results (iteration 2)
 └── README.md                           # You are here!
 ```
 
@@ -158,6 +155,26 @@ The app will launch at `http://localhost:7860`
 - **Distribution Chart**: Final tally of agreements vs. rejections across the population
 
 - **Wave Propagation %**: Progress of how the influence spreads through the network
+
+---
+
+## 📸 Visual Overview & Results
+
+### Model Demonstration (V1)
+![Model Demonstration](src/v1/image.png)
+*Sentiment Ripple model showing the propagation mechanism across users*
+
+### Results Showcase (V1)
+![Results V1](src/v1/result.png)
+*First iteration results displaying user distribution and ripple effect visualization*
+
+### Advanced Results (V2 - Iteration 1)
+![Results V2 Iteration 1](src/v2/result2.png)
+*Enhanced model results with improved bias modeling and user interaction patterns*
+
+### Final Results (V2 - Iteration 2)
+![Results V2 Iteration 2](src/v2/result3.png)
+*Latest iteration showcasing optimized ripple effect simulation with refined analytics*
 
 ---
 
