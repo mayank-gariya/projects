@@ -30,6 +30,10 @@ Sentiment Ripple uses Machine Learning to:
 Think of it as watching a stone drop into water, but the water is made of human decision-making patterns, and the ripples are measurable sentiment shifts.
 
 ---
+## TO fully understand you should check my medium blog for this project .
+[link for the mdeium post click here .....](https://medium.com/@mayankgariya482/building-the-repple-a-comprehensive-guide-for-the-github-project-8f2cae92e744)
+
+---
 
 ## 🎯 Key Features
 
