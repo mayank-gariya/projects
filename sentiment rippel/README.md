@@ -5,6 +5,9 @@
 ---
 
 ## The Story Behind This Project
+![Model workflow](src/workflow.png)
+*The ideal workflow used in order to make the project *
+
 
 Hello, I'm **Mayank Gariya**, and I want to share the journey of building Sentiment Ripple—a project that explores one of the most fascinating (and sometimes troubling) phenomena in our connected world.
 
@@ -13,6 +16,8 @@ Hello, I'm **Mayank Gariya**, and I want to share the journey of building Sentim
 I started this project with a simple observation: when one person expresses a negative sentiment online, how does it influence others? Through multiple modeling iterations and countless experiments, I set out to understand and simulate this phenomenon.
 
 The journey wasn't straightforward. I tried numerous approaches, refined my models, adjusted my datasets, and pivoted my thinking several times. But each iteration brought me closer to something meaningful.
+
+## THE WORKFLOW 
 
 ### What This Project Does
 
@@ -159,6 +164,7 @@ The app will launch at `http://localhost:7860`
 ---
 
 ## 📸 Visual Overview & Results
+
 
 ### Model Demonstration (V1)
 ![Model Demonstration](src/v1/image.png)
