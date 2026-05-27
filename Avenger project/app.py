@@ -11,8 +11,15 @@ from sklearn.exceptions import InconsistentVersionWarning
 
 warnings.filterwarnings("ignore", category=InconsistentVersionWarning)
 
-# --- Original Logic Preserved ---
 ps = PorterStemmer()
+
+resources = ['punkt', 'punkt_tab', 'stopwords']
+for res in resources:
+    try:
+        nltk.download(res, quiet=True)
+    except Exception as e:
+        print(f"Error downloading {res}: {e}")
+        
 
 def transform(text):
     text = text.lower()
@@ -21,8 +28,8 @@ def transform(text):
     return " ".join(y)
 
 try:
-    loaded_pipe = joblib.load('multinomial_nb_model.joblib')
-    loaded_le = joblib.load('label_encoder.joblib')
+    loaded_pipe = joblib.load('multinomial_nb_model.pkl')
+    loaded_le = joblib.load('label_encoder.pkl')
 
 except:
     loaded_pipe = None
@@ -64,7 +71,7 @@ with gr.Blocks() as demo:
                 """)
             
             gr.Markdown("---")
-            gr.Markdown("### 📝 Step-by-Step Quiz")
+            gr.Markdown("### 📝 AVengers Quiz")
             
             # Interactive Quiz Steps
             with gr.Column(visible=True) as step1:
