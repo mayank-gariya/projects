@@ -17,7 +17,10 @@ What started as a simple classification problem evolved into an interactive **AI
 - 🎯 **Deployment**: Built an interactive Gradio interface for a seamless user experience
 
 ---
+## workflow 
+![image of workflow ](src/wrokflow.png)
 
+---
 ## 🎮 Try It Now!
 
 **[Play the Avenger Guessing Game on Hugging Face Spaces](https://huggingface.co/spaces/realmanise/avenger-guess-game)**
