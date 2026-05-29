@@ -74,22 +74,7 @@ After answering all questions, the AI analyzes your responses and reveals which 
 ![Captain Strength](src/captainstrength.png)
 ![Captain Intelligence](src/captaininteli.png)
 
-#### Iron Man - Tech Genius
-![Iron Strength](src/ironstrength.png)
-![Iron Intelligence](src/ironinteli.png)
-
-#### Hulk - Raw Power
-![Hulk Strength](src/hulkstrength.png)
-![Hulk Intelligence](src/hulkinteli.png)
-
-#### Spider-Man - Balanced Hero
-![Spider Strength](src/spiderstrength.png)
-![Spider Intelligence](src/spiderinteli.png)
-
-#### Black Widow - Tactical Expert
-![Widow Strength](src/widowstrength.png)
-![Widow Intelligence](src/widowinteli.png)
-
+## other are same 
 ---
 
 ## 🛠️ Tech Stack
