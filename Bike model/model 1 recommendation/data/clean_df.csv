@@ -1,0 +1,306 @@
+,company,country_of_origin,model,number_of_cc,horsepower,torque,transmission_type,drivetrain,seating,price,year,looks,body_type,engine_type,number_of_cylinders
+0,italy,Italy,rs 660,659.0,100.0,67.0,quickshifter,chain,2,1099000.0,2021,sport,naked,paralleltwin,2
+1,italy,Italy,tuono 660,659.0,100.0,67.0,quickshifter,chain,2,1199000.0,2021,sport,naked,paralleltwin,2
+2,italy,Italy,rs 125,124.9,15.0,12.0,manual,chain,2,449000.0,2022,sport,racing,singlecylinder,1
+3,italy,Italy,shiver 900,896.0,95.0,90.0,manual,shaft,2,1399000.0,2022,adventure,naked,vtwin,2
+4,italy,Italy,tuono 1100,1077.0,175.0,121.0,manual,shaft,2,1999000.0,2022,adventure,naked,vtwin,2
+5,italy,Italy,tnt 125,125.0,11.0,10.8,manual,chain,2,125000.0,2023,classy,sport,single,1
+6,italy,Italy,tnt 250,250.0,27.0,21.2,manual,chain,2,175000.0,2023,sporty,sport,single,1
+7,italy,Italy,tnt 300,300.0,39.0,26.5,manual,chain,2,200000.0,2023,classy,sport,single,1
+8,italy,Italy,tnt 600i,600.0,85.0,54.6,manual,chain,2,400000.0,2023,sporty,sport,paralleltwin,2
+9,italy,Italy,tnt 899,899.0,116.0,86.3,manual,chain,2,600000.0,2023,sporty,sport,triple,3
+10,italy,Italy,trk 251,250.0,27.0,21.2,manual,chain,2,225000.0,2023,adventure,adventure,single,1
+11,italy,Italy,trk 502,500.0,47.0,46.0,manual,chain,2,350000.0,2023,adventure,adventure,paralleltwin,2
+12,italy,Italy,leoncino 500,500.0,47.0,46.0,manual,chain,2,325000.0,2023,retro,cruiser,paralleltwin,2
+13,germany,Germany,g 310 gs,313.0,34.0,28.0,manual,chain,2,300000.0,2023,adventure,adventure,single,1
+14,germany,Germany,g 310 r,313.0,34.0,28.0,manual,chain,2,250000.0,2023,sporty,roadster,single,1
+15,germany,Germany,f 850 gs,853.0,95.0,92.0,manual,shaft,2,600000.0,2023,adventure,adventure,paralleltwin,2
+16,germany,Germany,f 850 gs adventure,853.0,95.0,92.0,manual,shaft,2,800000.0,2023,adventure,adventure,paralleltwin,2
+17,germany,Germany,r 1250 gs,1170.0,136.0,112.0,manual,shaft,2,1200000.0,2023,adventure,adventure,boxer,2
+18,germany,Germany,r 1250 rt,1170.0,136.0,112.0,manual,shaft,2,1400000.0,2023,touring,cruiser,boxer,2
+19,germany,Germany,s 1000 rr,999.0,199.0,113.0,manual,chain,2,1600000.0,2023,sporty,superbike,liquidcooled inline4,4
+20,germany,Germany,s 1000 r,999.0,165.0,112.0,manual,chain,2,1200000.0,2023,sporty,roadster,liquidcooled inline4,4
+40,china,China,300nk,292.4,33.99,21.5,manual,chain drive,1,229000.0,2022,classy,naked,singlecylinder,1
+41,china,China,650nk,649.3,61.18,45.0,manual,chain drive,1,429000.0,2022,classy,naked,paralleltwin,2
+42,china,China,650mt,649.0,70.7,55.0,manual,chain drive,2,529000.0,2022,adventure,adventure,paralleltwin,2
+43,china,China,650gt,649.3,62.54,49.0,manual,shaft drive,2,559000.0,2022,touring,sporttouring,paralleltwin,2
+44,usa,USA,hellcat,1967.0,205.0,135.0,manual,belt drive,1,55000.0,2022,retro,cruiser,vtwin,2
+45,usa,USA,wraith,1967.0,190.0,125.0,manual,belt drive,1,50000.0,2022,modern,roadster,vtwin,2
+46,usa,USA,x132 hellcat combat fighter,2163.0,227.0,143.0,manual,belt drive,1,100000.0,2023,modern,fighter,vtwin,2
+47,south korea,South Korea,vl 125,124.9,10.8,10.2,manual,chain drive,1,129500.0,2022,classy,cruiser,singlecylinder,1
+48,south korea,South Korea,v125 fi,124.9,11.2,10.2,cvt,automatic,1,140000.0,2022,classy,scooter,singlecylinder,1
+49,south korea,South Korea,ns 250 fi,249.6,27.6,22.4,manual,chain drive,1,239000.0,2023,sporty,naked,singlecylinder,1
+50,south korea,South Korea,roadwin 250,249.6,27.6,22.4,manual,chain drive,1,259000.0,2023,adventure,adventure,singlecylinder,1
+51,italy,Italy,panigale v4,1103.0,221.0,124.0,manual,chain,1,2741000.0,2022,classy,sports,v4,4
+52,italy,Italy,diavel,1262.0,159.6,93.0,automatic,belt,1,2591000.0,2022,bold,cruiser,ltwin,2
+53,italy,Italy,scrambler 800,803.0,73.0,47.0,manual,chain,2,939000.0,2022,retro,standard,ltwin,2
+54,italy,Italy,monster,937.0,111.0,69.0,manual,chain,1,1295000.0,2022,sleek,naked,ltwin,2
+55,italy,Italy,multistrada v4,1158.0,168.0,93.0,manual,shaft,2,2148000.0,2022,adventure,adventure,v4,4
+56,united states,United States,nightster,975.0,88.5,65.0,manual,belt drive,1,1749000.0,2023,classy,cruiser,vtwin,1
+57,united states,United States,sportster s,1252.0,120.7,94.0,manual,belt drive,1,1879000.0,2023,classy,cruiser,vtwin,1
+58,united states,United States,road glide special,1868.0,92.5,118.0,automatic,belt drive,1,4049000.0,2023,classy,tourer,vtwin,2
+59,united states,United States,street glide special,1868.0,92.5,118.0,automatic,belt drive,1,3749000.0,2023,classy,tourer,vtwin,2
+60,united states,United States,pan america 1250,1252.0,150.2,94.0,manual,chain drive,2,2449000.0,2023,adventure,adventure,vtwin,2
+61,united states,United States,fat bob,1868.0,92.5,118.0,manual,belt drive,1,2049000.0,2023,classy,cruiser,vtwin,2
+62,united states,United States,fat boy,1868.0,92.5,118.0,manual,belt drive,1,2449000.0,2023,classy,cruiser,vtwin,2
+63,united states,United States,heritage classic,1868.0,94.0,112.0,manual,belt drive,2,2659000.0,2023,classy,cruiser,vtwin,2
+64,japan,Japan,cbr250r,249.6,26.5,19.4,manual,chain drive,2,145000.0,2023,classy,sport,singlecylinder,2
+65,japan,Japan,cb350r,348.36,31.0,27.3,manual,chain drive,2,185000.0,2023,classic,standard,singlecylinder,1
+66,india,India,hness cb350,348.36,29.6,30.0,manual,chain drive,2,165000.0,2022,classic,standard,singlecylinder,1
+67,india,India,cb shine,124.9,10.5,10.3,manual,chain drive,2,65000.0,2023,modern,standard,singlecylinder,1
+68,india,India,activa 125,124.9,8.75,10.3,cvt,automatic,2,62000.0,2023,modern,scooter,singlecylinder,1
+69,sweden,Sweden,vitpilen 401,373.2,43.0,37.0,manual,chain drive,2,325000.0,2023,modern stylish,naked,singlecylinder,1
+70,sweden,Sweden,svartpilen 401,373.2,43.0,37.0,manual,chain drive,2,335000.0,2023,modern rugged,adventure,singlecylinder,1
+71,sweden,Sweden,701 supermoto,693.0,75.0,72.0,manual,chain drive,1,650000.0,2023,modern sporty,supermoto,singlecylinder,1
+72,sweden,Sweden,701 enduro,693.0,75.0,72.0,manual,chain drive,1,750000.0,2023,modern offroad,enduro,singlecylinder,1
+73,usa,USA,chief dark horse,1133.0,108.0,114.0,manual,chain drive,2,22999.0,2023,classic rugged,cruiser,vtwin,2
+74,usa,USA,chief bobber dark horse,1133.0,108.0,114.0,manual,chain drive,2,23999.0,2023,classic bobber,cruiser,vtwin,2
+75,usa,USA,challenger dark horse,1799.0,122.0,178.0,manual,belt drive,2,25999.0,2023,modern muscular,cruiser,vtwin,2
+76,usa,USA,ftr 1200 s,1203.0,120.0,110.0,manual,chain drive,1,19999.0,2023,modern sporty,standard,vtwin,1
+77,usa,USA,scout bobber,1133.0,94.0,95.0,manual,chain drive,2,14999.0,2023,modern bobber,standard,vtwin,1
+78,japan,Japan,ninja 300,296.0,39.0,27.0,manual,chain,2,343000.0,2023,classy,sports,liquidcooled paralleltwin,2
+79,japan,Japan,ninja 400,399.0,45.0,39.0,manual,chain,2,519000.0,2023,classy,sports,liquidcooled paralleltwin,2
+80,japan,Japan,ninja 650,649.0,67.0,66.0,manual,chain,2,665000.0,2023,classy,sports,liquidcooled paralleltwin,2
+81,japan,Japan,z900,948.0,125.0,98.6,manual,chain,2,911000.0,2023,aggressive,naked,liquidcooled fourcylinder,4
+82,japan,Japan,z h2,998.0,197.0,140.0,manual,shaft,2,2302000.0,2023,aggressive,naked,supercharged fourcylinder,4
+83,japan,Japan,vulcan s,649.0,60.0,62.0,manual,belt,2,695000.0,2023,classic,cruiser,liquidcooled paralleltwin,2
+84,austria,Austria,125 duke,125.0,15.0,12.0,manual,chain,1,178000.0,2023,classy,naked,singlecylinder,1
+85,austria,Austria,200 duke,200.0,25.0,19.0,manual,chain,1,192000.0,2023,classy,naked,singlecylinder,1
+86,austria,Austria,250 duke,250.0,30.0,24.0,manual,chain,1,220000.0,2023,classy,naked,singlecylinder,1
+87,austria,Austria,390 duke,390.0,43.0,37.0,manual,chain,1,310000.0,2023,classy,naked,singlecylinder,1
+88,austria,Austria,rc 200,200.0,25.0,19.0,manual,chain,1,205000.0,2023,raceinspired,sport,singlecylinder,1
+89,austria,Austria,rc 390,390.0,43.0,37.0,manual,chain,1,330000.0,2023,raceinspired,sport,singlecylinder,1
+90,austria,Austria,390 adventure,373.0,43.0,37.0,manual,chain,2,360000.0,2023,adventure,adventure,singlecylinder,1
+91,austria,Austria,790 adventure,799.0,95.0,88.0,manual,chain,2,550000.0,2023,adventure,adventure,paralleltwin,2
+92,taiwan,Taiwan,agility 125,125.0,10.0,9.5,cvt,automatic,1,75000.0,2023,classy,scooter,singlecylinder,1
+93,taiwan,Taiwan,downtown 300i,300.0,29.0,27.0,cvt,automatic,2,150000.0,2023,classy,scooter,singlecylinder,1
+94,taiwan,Taiwan,k-xct 300,300.0,29.0,27.0,cvt,automatic,2,160000.0,2023,adventure,adventure,singlecylinder,1
+95,taiwan,Taiwan,ak 550,550.0,47.0,55.0,manual,chain,2,250000.0,2023,sport,sport,paralleltwin,2
+96,italy,Italy,daytona 125,125.0,12.5,10.2,manual,chain drive,1,105000.0,2023,modern,naked,air cooled single cylinder 4stroke,1
+97,italy,Italy,gran turismo 300,300.0,25.8,23.5,manual,chain drive,1,150000.0,2023,modern,sport,liquid cooled single cylinder 4stroke,1
+98,italy,Italy,cafe racer 500,500.0,38.0,38.0,manual,chain drive,1,200000.0,2023,retro,cafe racer,air cooled single cylinder 4stroke,1
+99,italy,Italy,scrambler 650,650.0,47.0,50.0,manual,chain drive,1,250000.0,2023,adventure,scrambler,liquid cooled single cylinder 4stroke,1
+100,india,India,v125,124.7,10.19,9.2,automatic,belt drive,1,80000.0,2023,classy,scooter,air cooled single cylinder 4stroke,1
+101,india,India,v200,200.0,12.9,16.0,automatic,belt drive,1,100000.0,2023,classy,scooter,air cooled single cylinder 4stroke,1
+102,china,China,lf125s,125.0,9.4,9.5,cvt,automatic,1,50000.0,2023,modern,scooter,air cooled single cylinder 4stroke,1
+103,china,China,lf200gy,200.0,12.0,14.0,cvt,automatic,1,70000.0,2023,modern,scooter,air cooled single cylinder 4stroke,1
+104,china,China,lf250k,250.0,18.5,18.0,manual,chain drive,1,100000.0,2023,modern,adventure,air cooled single cylinder 4stroke,1
+105,china,China,lf250gy-3,250.0,22.5,21.0,manual,chain drive,1,100000.0,2023,modern,sport,air cooled single cylinder 4stroke,1
+106,india,India,mojo 300,295.0,26.5,28.0,manual,chain drive,2,208000.0,2015,adventure,naked,singlecylinder liquidcooled dohc,1
+107,india,India,xpulse 200,199.6,18.1,17.3,manual,chain drive,2,128990.0,2019,adventure,standard,singlecylinder aircooled ohc,1
+108,india,India,gusto 125,124.9,10.7,10.5,manual,chain drive,2,69990.0,2017,commuter,standard,singlecylinder aircooled ohc,1
+109,india,India,duro dzire,110.0,8.5,8.5,manual,chain drive,2,54990.0,2019,commuter,standard,singlecylinder aircooled ohc,1
+110,india,India,centuro 100,106.7,8.5,8.5,manual,chain drive,2,54095.0,2014,commuter,standard,singlecylinder aircooled ohc,1
+111,italy,Italy,v85 tt,853.0,80.0,73.8,manual,shaft drive,2,1540000.0,2022,adventure,standard,vtwin,1
+112,italy,Italy,v9 bobber,900.0,65.0,59.4,manual,shaft drive,2,1360000.0,2016,bobber,cruiser,vtwin,1
+113,italy,Italy,v9 roamer,900.0,65.0,59.4,manual,shaft drive,2,1330000.0,2016,cruiser,cruiser,vtwin,1
+114,italy,Italy,audace,900.0,75.0,72.0,manual,shaft drive,2,1480000.0,2019,cruiser,cruiser,vtwin,1
+115,italy,Italy,eldorado,1400.0,96.0,86.0,manual,shaft drive,2,1750000.0,2016,classic,cruiser,vtwin,1
+116,italy,Italy,mgx-21,1700.0,115.0,89.0,automatic,shaft drive,2,2490000.0,2021,cruiser,cruiser,vtwin,1
+122,uk,UK,commando 961 café racer,961.0,80.0,67.0,manual,chain drive,2,2099000.0,2023,classy,café racer,aircooled paralleltwin,2
+123,uk,UK,commando 961 sport,961.0,80.0,67.0,manual,chain drive,2,2099000.0,2023,classy,sports bike,aircooled paralleltwin,2
+124,uk,UK,atlas,1200.0,105.0,90.0,manual,shaft drive,2,3299000.0,2022,adventure,adventure bike,liquidcooled paralleltwin,2
+125,uk,UK,v4sv,1200.0,177.0,125.0,manual,chain drive,2,3599000.0,2023,sporty,superbike,liquidcooled v4,4
+126,italy,Italy,aprilia sr160,160.0,11.3,11.5,cvt,automatic,2,125000.0,2023,sporty,scooter,aircooled singlecylinder,1
+127,italy,Italy,aprilia rs150,150.0,17.7,14.2,manual,chain drive,2,155000.0,2023,sporty,sports bike,liquidcooled singlecylinder,1
+128,italy,Italy,aprilia tuono 660,660.0,95.0,67.0,manual,chain drive,2,315000.0,2022,sporty,naked bike,liquidcooled paralleltwin,2
+129,italy,Italy,vespa vx125,125.0,9.5,9.8,cvt,automatic,2,115000.0,2023,classic,scooter,aircooled singlecylinder,1
+130,italy,Italy,vespa gts300,300.0,23.8,26.0,cvt,automatic,2,215000.0,2023,classic,scooter,liquidcooled singlecylinder,1
+131,india,India,bullet 350,346.0,19.8,28.0,manual,chain drive,2,147000.0,2023,classic,cruiser,aircooled singlecylinder,1
+132,india,India,bullet 500,499.0,27.2,41.0,manual,chain drive,2,197000.0,2023,classic,cruiser,aircooled singlecylinder,1
+133,india,India,meteor 350,349.0,20.2,27.0,manual,chain drive,2,165000.0,2022,classic,cruiser,aircooled singlecylinder,1
+134,india,India,himalayan,411.0,24.5,32.0,manual,chain drive,2,220000.0,2022,adventure,adventure bike,aircooled singlecylinder,1
+135,india,India,interceptor 650,648.0,47.6,52.0,manual,shaft drive,2,279000.0,2022,classic,cafe racer,aircooled paralleltwin,2
+136,india,India,continental gt 650,648.0,47.6,52.0,manual,shaft drive,2,299000.0,2022,sporty,cafe racer,aircooled paralleltwin,2
+137,india,India,super meteor 650,648.0,47.0,52.3,manual,chain drive,2,349000.0,2022,classy,cruiser,parallel twin,2
+138,japan,Japan,gixxer sf 250,249.0,26.5,22.6,manual,chain drive,2,169000.0,2022,sporty,naked bike,singlecylinder,1
+139,japan,Japan,gixxer 250,249.0,26.5,22.6,manual,chain drive,2,139000.0,2022,sporty,street bike,singlecylinder,1
+140,japan,Japan,intruder 150,155.0,14.8,14.0,manual,chain drive,2,115000.0,2022,classic,cruiser,singlecylinder,1
+141,japan,Japan,access 125,124.0,8.7,10.2,cvt,automatic,2,67500.0,2022,practical,scooter,singlecylinder,1
+142,japan,Japan,burgman street 125,124.0,8.7,10.2,cvt,automatic,2,78300.0,2022,practical,scooter,singlecylinder,1
+143,taiwan,Taiwan,joymax z 300,300.0,32.0,26.0,automatic,cvt,2,325000.0,2023,adventure,maxiscooter,liquidcooled 4stroke singlecylinder,1
+144,taiwan,Taiwan,maxsym 400i,400.0,33.0,34.0,automatic,cvt,2,450000.0,2022,sporty,maxiscooter,liquidcooled 4stroke singlecylinder,1
+145,taiwan,Taiwan,joyride 125,125.0,10.0,10.0,automatic,cvt,2,110000.0,2022,classy,scooter,aircooled 4stroke singlecylinder,1
+146,taiwan,Taiwan,fiddle iii 125,125.0,9.0,9.0,automatic,cvt,2,95000.0,2021,classy,scooter,aircooled 4stroke singlecylinder,1
+147,taiwan,Taiwan,hd 200,200.0,17.0,16.0,manual,chain,2,150000.0,2020,classic,naked bike,aircooled 4stroke singlecylinder,1
+148,united kingdom,United Kingdom,rocket 3 r,2500.0,167.0,163.0,manual,shaft drive,2,2019312.0,2023,classy cruiser,cruiser,3cylinder,3
+149,united kingdom,United Kingdom,speed triple 1200 rr,1160.0,177.0,95.0,sequential,chain drive,1,1795000.0,2023,sporty aggressive,naked,3cylinder,3
+150,united kingdom,United Kingdom,trident 660,660.0,89.0,59.0,manual,chain drive,2,745000.0,2022,modern sporty,naked,3cylinder,2
+151,united kingdom,United Kingdom,tiger 900 gt pro,888.0,105.0,64.0,manual,shaft drive,2,1499000.0,2023,adventure touring,adventure,3cylinder,1
+152,united kingdom,United Kingdom,tiger 850 sport,888.0,85.0,62.0,manual,shaft drive,2,1195000.0,2022,adventure sporty,adventure,3cylinder,1
+153,united kingdom,United Kingdom,speed twin 900,900.0,97.0,85.0,manual,chain drive,2,849000.0,2022,classic stylish,naked,2cylinder,2
+154,united kingdom,United Kingdom,bonneville t100,900.0,65.0,59.0,manual,chain drive,2,969000.0,2022,classic vintage,cruiser,2cylinder,2
+155,united kingdom,United Kingdom,bonneville t120,1200.0,79.0,87.0,manual,chain drive,2,1109000.0,2022,classic vintage,cruiser,2cylinder,2
+156,italy,Italy,primavera,150.0,12.1,12.2,cvt,automatic,2,132000.0,2022,classic stylish,scooter,1cylinder,1
+157,italy,Italy,sprint,125.0,10.0,8.8,cvt,automatic,2,115000.0,2022,modern sporty,scooter,1cylinder,1
+158,italy,Italy,gts 300,300.0,23.8,19.4,cvt,automatic,2,175000.0,2022,sporty aggressive,scooter,1cylinder,1
+159,italy,Italy,946,125.0,10.7,9.2,cvt,automatic,2,165000.0,2022,classic vintage,scooter,1cylinder,1
+160,italy,Italy,elettrica,70.0,4.0,56.0,cvt,electric,2,110000.0,2022,modern stylish,scooter,electric,0
+161,japan,Japan,r1,998.0,200.0,112.0,manual,chain drive,1,2000000.0,2023,sporty aggressive,sportbike,4cylinder,4
+162,japan,Japan,mt-09,889.0,117.0,69.0,manual,chain drive,1,850000.0,2022,modern sporty,naked,3cylinder,3
+163,japan,Japan,r3,321.0,42.0,29.0,manual,chain drive,1,550000.0,2022,sporty beginnerfriendly,sportbike,4cylinder,4
+164,japan,Japan,fz-25,249.0,26.0,18.6,manual,chain drive,1,350000.0,2022,modern stylish,naked,1cylinder,1
+165,japan,Japan,xsr155,155.0,18.0,14.7,manual,chain drive,1,200000.0,2022,classic vintage,retro,1cylinder,1
+166,italy,Italy,rr 350 2-stroke,350.0,40.0,34.0,sequential,chain drive,1,1250000.0,2023,classy,enduro,twostroke,1
+167,italy,Italy,rr 250 2-stroke,250.0,35.0,27.0,sequential,chain drive,1,1100000.0,2023,classy,enduro,twostroke,1
+168,italy,Italy,rr 125 2-stroke,125.0,27.0,22.0,sequential,chain drive,1,800000.0,2023,classy,enduro,twostroke,1
+169,italy,Italy,rr 390 4-stroke,390.0,45.0,37.0,sequential,chain drive,1,1400000.0,2023,classy,enduro,fourstroke,1
+170,italy,Italy,rr 250 4-stroke,250.0,38.0,28.0,sequential,chain drive,1,1200000.0,2023,classy,enduro,fourstroke,1
+171,italy,Italy,rr 125 4-stroke,125.0,24.0,20.0,sequential,chain drive,1,850000.0,2023,classy,enduro,fourstroke,1
+172,italy,Italy,alp 200,200.0,25.0,22.0,mesh,shaft drive,2,1050000.0,2023,adventure,dualsport,fourstroke,1
+173,italy,Italy,alp 125,125.0,20.0,18.0,mesh,shaft drive,2,800000.0,2023,adventure,dualsport,fourstroke,1
+174,spain,Spain,mc 250f,250.0,37.0,26.0,speed,chain drive,1,1100000.0,2023,modern,enduro,fourstroke,1
+175,spain,Spain,mc 350f,350.0,44.0,32.0,speed,chain drive,1,1300000.0,2023,modern,enduro,fourstroke,1
+176,spain,Spain,mc 450f,450.0,52.0,42.0,speed,chain drive,1,1450000.0,2023,modern,enduro,fourstroke,1
+177,spain,Spain,ec 250,250.0,35.0,25.0,speed,chain drive,1,1050000.0,2023,modern,motocross,twostroke,1
+178,spain,Spain,ec 300,300.0,40.0,30.0,speed,chain drive,1,1200000.0,2023,modern,motocross,twostroke,1
+179,spain,Spain,ec 250f,250.0,37.0,26.0,speed,chain drive,1,1150000.0,2023,modern,enduro,twostroke,1
+180,spain,Spain,ec 300f,300.0,44.0,32.0,speed,chain drive,1,1300000.0,2023,modern,enduro,twostroke,1
+182,united states,United States,livewire,1133.0,105.0,116.0,drive,permanent magnet synchronous motor,1,3500000.0,2021,modern,cruiser,electric,1
+183,japan,Japan,ct125,124.9,10.2,10.4,cvt,shaft drive,1,135000.0,2022,adventure,trail,single,1
+184,japan,Japan,super cub,110.0,8.5,9.5,cvt,chain drive,1,65000.0,2023,classic,standard,single,1
+185,sweden,Sweden,vitpilen 250,248.76,30.84,24.0,manual,chain,1,219000.0,2023,classy,naked,singlecylinder,1
+186,sweden,Sweden,svartpilen 250,248.76,30.84,24.0,manual,chain,1,219000.0,2023,adventure,naked,singlecylinder,1
+187,sweden,Sweden,vitpilen 401,373.2,43.5,37.0,manual,chain,1,280000.0,2023,classy,naked,singlecylinder,1
+188,sweden,Sweden,svartpilen 401,373.2,43.5,37.0,manual,chain,1,290000.0,2023,adventure,naked,singlecylinder,1
+189,sweden,Sweden,fe 350,350.0,39.3,35.0,manual,chain,1,420000.0,2023,motocross,enduro,singlecylinder,1
+190,sweden,Sweden,te 300i,300.0,44.2,30.0,manual,chain,1,400000.0,2023,enduro,enduro,singlecylinder,2
+191,sweden,Sweden,fe 501,501.0,51.5,48.0,manual,chain,1,550000.0,2023,motocross,enduro,singlecylinder,1
+192,sweden,Sweden,te 501i,501.0,51.5,48.0,manual,chain,1,530000.0,2023,enduro,enduro,singlecylinder,1
+193,austria,Austria,1290 super duke r,1301.0,177.0,140.0,manual,chain,1,1700000.0,2023,aggressive,naked,vtwin,2
+194,italy,Italy,seiemmezzo 6 ½,649.0,55.7,54.0,manual,chain,2,6.89,2023,classy,naked,paralleltwin,2
+195,italy,Italy,x-cape,649.0,60.8,54.0,manual,shaft,2,7.2,2023,adventure,adventure,paralleltwin,2
+196,japan,Japan,hayabusa,1340.0,190.0,150.0,manual,chain,2,1690000.0,2023,classy,sport,inlinefour,4
+197,united kingdom,United Kingdom,rocket 3,2458.0,167.0,221.0,manual,shaft,2,2140000.0,2023,classy,cruiser,inlinethree,3
+199,india,India,pulsar 125,124.9,12.7,11.0,mesh,chain,1,68000.0,2023,modern sporty,street,aircooled 4stroke singlecylinder dtsi,1
+200,india,India,pulsar 150,149.5,14.5,13.0,mesh,chain,1,85000.0,2023,modern sporty,street,aircooled 4stroke singlecylinder dtsi,1
+204,india,India,platina 110,110.0,8.6,9.8,mesh,chain,1,62000.0,2023,simple reliable,commuter,aircooled 4stroke singlecylinder dtsi,1
+205,india,India,splendor plus,100.0,9.0,8.9,mesh,chain,1,58000.0,2023,simple reliable,commuter,aircooled 4stroke singlecylinder dtsi,1
+206,india,India,passion pro,110.0,9.1,9.7,mesh,chain,1,64000.0,2023,modern sporty,commuter,aircooled 4stroke singlecylinder dtsi,1
+209,india,India,glamour 125,124.7,10.7,10.6,mesh,chain,1,72000.0,2023,modern stylish,commuter,aircooled 4stroke singlecylinder dtsi,1
+210,india,India,hf deluxe,100.0,8.3,8.05,mesh,chain,1,51000.0,2023,simple reliable,commuter,aircooled 4stroke singlecylinder dtsi,1
+214,india,India,apache rtr 200 4v,199.5,19.7,16.8,speed,chain drive,2,128000.0,2018,sporty,naked,singlecylinder aircooled,1
+215,india,India,apache rtr 200 4v fi,199.5,20.2,18.1,speed,chain drive,2,134000.0,2020,sporty,naked,singlecylinder fuelinjected aircooled,1
+216,india,India,apache rtr 160 2v,159.7,15.3,13.7,speed,chain drive,2,99500.0,2020,sporty,naked,singlecylinder aircooled,1
+217,india,India,ntorq 125,124.8,9.4,10.5,cvt,automatic,2,69900.0,2019,fun,scooter,singlecylinder aircooled,1
+218,india,India,jupiter,110.0,8.3,9.4,cvt,automatic,2,62275.0,2022,practical,scooter,singlecylinder aircooled,1
+219,india,India,sport 125,124.8,9.7,10.5,speed,chain drive,2,78750.0,2022,classic,standard,singlecylinder aircooled,1
+220,india,India,radeon,124.8,8.7,10.0,speed,chain drive,2,72750.0,2022,budget,standard,singlecylinder aircooled,1
+221,china,China,artemis,750.0,500.0,80.0,motor,shimano drivetrain,1,250000.0,2023,modern,mountain bike,electric,1
+222,china,China,artemis,250.0,250.0,80.0,motor,shimano drivetrain,1,150000.0,2022,modern,hybrid bike,electric,1
+223,india,India,artemis,250.0,250.0,80.0,motor,shimano drivetrain,1,100000.0,2021,classic,electric scooter,electric,1
+224,india,India,artemis,250.0,250.0,80.0,motor,shimano drivetrain,1,80000.0,2020,classic,electric scooter,electric,1
+225,france,France,django 125,125.0,10.2,10.8,manual,chain,2,115000.0,2023,classic,cruiser,singlecylinder,1
+226,france,France,django 300,300.0,27.0,29.0,manual,chain,2,145000.0,2023,modern,cruiser,singlecylinder,1
+227,france,France,metropolis 400,399.0,36.0,38.0,automatic,cvt,3,240000.0,2023,futuristic,scooter,singlecylinder,1
+228,india,India,brutus single speed mtb 29,29.0,25.0,25.0,speed,front suspension,1,14250.0,2023,rugged,mountain bike,2,1
+229,spain,Spain,stx 150,150.0,12.5,12.0,manual,chain drive,1,100000.0,2023,sporty,street bike,4stroke,1
+230,china,China,tc,125.0,5.0,110.0,automatic,electric,2,140000.0,2023,retromodern,naked,electric,1
+231,china,China,tc max,125.0,5.0,110.0,automatic,electric,2,160000.0,2023,modern,cafe racer,electric,1
+232,china,China,ts street hunter,125.0,5.0,110.0,automatic,electric,2,150000.0,2023,modern,streetfighter,electric,1
+233,china,China,tc wanderer,125.0,5.0,110.0,automatic,electric,2,130000.0,2023,retromodern,scrambler,electric,1
+234,italy,Italy,dragster 200,200.0,20.07,17.0,automatic,singlegear,2,829000.0,2020,futuristic,naked,liquidcooled,1
+240,united states,United States,cross country,106.0,94.0,110.0,mesh,belt drive,2,1500000.0,2017,modern,cruiser,vtwin,2
+241,united states,United States,judge,106.0,94.0,110.0,mesh,belt drive,2,1450000.0,2017,modern,cruiser,vtwin,2
+242,united states,United States,hammer,1179.0,104.0,100.0,mesh,belt drive,2,1700000.0,2017,modern,cruiser,vtwin,2
+243,united states,United States,octane,1179.0,104.0,76.0,mesh,belt drive,2,1250000.0,2017,modern,cruiser,vtwin,2
+244,united states,United States,vision,1731.0,116.0,120.0,mesh,belt drive,2,2200000.0,2017,modern,touring,vtwin,3
+245,china,China,furious 125,125.0,11.0,10.0,mesh,chain drive,2,100000.0,2023,modern,street,single,1
+246,china,China,black cafe 125,125.0,11.0,10.0,mesh,chain drive,2,105000.0,2023,retro,cafe racer,single,1
+247,china,China,muscle 125,125.0,11.0,10.0,mesh,chain drive,2,110000.0,2023,modern,cruiser,single,1
+248,china,China,scrambler 125,125.0,11.0,10.0,mesh,chain drive,2,115000.0,2023,retro,scrambler,single,1
+249,china,China,raw 125,125.0,11.0,10.0,mesh,chain drive,2,120000.0,2023,modern,naked,single,1
+250,italy,Italy,v302c,298.0,29.9,26.5,manual,chain drive,1,389000.0,2023,cruiser,retro,aircooled singlecylinder,1
+251,italy,Italy,vieste 300,278.2,18.4,16.0,automatic,automatic cvt,1,324992.0,2023,modern,sport,liquidcooled singlecylinder,1
+252,italy,Italy,k-light 250v,249.0,18.4,17.0,manual,chain drive,1,319983.0,2023,modern,sports naked,aircooled singlecylinder,1
+253,italy,Italy,k300 r,292.4,27.1,22.0,manual,chain drive,1,265053.0,2023,modern,sports,liquidcooled singlecylinder,1
+254,italy,Italy,sixties 300i,278.2,18.4,16.0,automatic,automatic cvt,1,329984.0,2023,retro,cafe racer,liquidcooled singlecylinder,1
+255,italy,Italy,sr125,125.0,9.56,10.5,automatic,automatic cvt,1,119999.0,2023,modern,commuter,aircooled singlecylinder,1
+256,india,India,jawa 42,293.0,27.33,27.02,manual,chain drive,2,167000.0,2020,retro,cruiser,singlecylinder liquidcooled,1
+257,india,India,jawa 42 bobber,293.0,27.33,27.02,manual,chain drive,2,184000.0,2020,retro,bobber,singlecylinder liquidcooled,1
+258,india,India,jawa perak,334.0,30.64,32.74,manual,chain drive,2,215000.0,2021,modern,cruiser,singlecylinder liquidcooled,1
+259,uk,UK,lxr 125,125.0,13.6,11.0,manual,chain drive,2,165000.0,2022,modern,sports,singlecylinder liquidcooled,1
+260,uk,UK,zsx 125,125.0,14.0,11.5,manual,chain drive,2,175000.0,2022,modern,naked,singlecylinder liquidcooled,1
+261,uk,UK,milano 125,125.0,9.5,9.0,automatic,belt drive,2,135000.0,2022,retro,scooter,singlecylinder aircooled,1
+262,uk,UK,vendetta 250,250.0,21.0,18.6,manual,chain drive,2,225000.0,2022,modern,cruiser,singlecylinder liquidcooled,1
+267,china,China,dirt ebike x260,500.0,5.0,184.3,automatic,electric,1,350000.0,2023,modern,dirt bike,electric,1
+268,china,China,alpha s,1903.0,67.7,192.3,automatic,"dualmotor, allwheel drive",2,140000.0,2023,futuristic,sportbike,electric,2
+269,south korea,South Korea,aquila gv650,647.0,68.0,54.0,manual,"vtwin, liquidcooled, 4stroke",2,650000.0,2023,modern aggressive,cruiser,vtwin,2
+270,italy,Italy,caballero 125,125.0,15.0,11.0,manual,chain drive,1,150000.0,2023,modern aggressive,enduro,singlecylinder,1
+274,usa,USA,zero s,7.2,74.0,106.0,automatic,electric,1,1299500.0,2023,naked,street,electric,1
+275,usa,USA,zero sr,11.4,92.0,130.0,automatic,electric,1,1599500.0,2023,naked,street,electric,1
+276,usa,USA,zero sr/f,14.4,110.0,190.0,automatic,electric,1,1999500.0,2023,sport,street,electric,1
+277,usa,USA,zero ds,11.4,92.0,130.0,automatic,electric,1,1699500.0,2023,adventure,dualsport,electric,1
+278,usa,USA,zero fx,7.2,74.0,106.0,automatic,electric,1,1399500.0,2023,dirt,offroad,electric,1
+279,denmark,Denmark,bullitt,125.0,11.5,11.0,manual,chain,1,145000.0,2023,classic,cargo,single,1
+280,japan,Japan,revo 300,292.0,27.6,22.8,manual,chain,2,105000.0,2022,modern,sport,singlecylinder,1
+281,japan,Japan,revo 125,124.9,13.2,9.4,manual,chain,2,55000.0,2022,modern,street,singlecylinder,1
+282,india,India,neo 110,110.0,9.0,8.5,manual,chain,2,40000.0,2022,retro,classic,singlecylinder,1
+283,india,India,mio 110,110.0,8.5,8.5,automatic,cvt,2,35000.0,2022,modern,scooter,singlecylinder,1
+287,italy,Italy,tl125,124.6,9.39,8.3,cvt,belt drive,2,88000.0,2023,retro,scooter,single cylinder,1
+288,italy,Italy,sixty2,279.5,19.5,22.0,cvt,belt drive,2,199000.0,2023,retro,cafe racer,single cylinder,1
+289,italy,Italy,tt125,124.6,9.39,8.3,cvt,belt drive,2,88000.0,2023,retro,scrambler,single cylinder,1
+290,taiwan,Taiwan,buddy 50,49.0,3.3,3.5,automatic,cvt,1,45000.0,2023,retro,standard,2stroke,1
+291,taiwan,Taiwan,buddy 125,125.0,9.5,10.2,automatic,cvt,2,60000.0,2023,modern,standard,4stroke,1
+292,taiwan,Taiwan,buddy 170i,170.0,11.6,12.8,automatic,cvt,2,80000.0,2023,modern,standard,4stroke,1
+293,taiwan,Taiwan,buddy kick,125.0,10.5,11.5,automatic,cvt,2,70000.0,2023,modern,standard,4stroke,1
+294,taiwan,Taiwan,hooligan 170i,170.0,14.5,15.5,automatic,cvt,2,90000.0,2023,retro,standard,4stroke,1
+295,taiwan,Taiwan,roughhouse 50,50.0,3.5,3.8,automatic,cvt,1,35000.0,2023,retro,standard,2stroke,1
+296,taiwan,Taiwan,roughhouse 50 sport,50.0,4.5,4.8,automatic,cvt,1,40000.0,2023,modern,standard,2stroke,1
+297,taiwan,Taiwan,rattler 50,50.0,3.3,3.5,automatic,cvt,1,30000.0,2023,retro,standard,2stroke,1
+298,taiwan,Taiwan,venture 50,50.0,4.5,4.8,automatic,cvt,1,45000.0,2023,modern,standard,4stroke,1
+299,china,China,renegade commando,279.5,25.5,23.0,speed,chain,2,164000.0,2023,retro,cruiser,singlecylinder liquidcooled 4stroke,1
+300,china,China,renegade sport s,280.0,26.5,22.5,speed,chain,2,157000.0,2023,modern,sport,singlecylinder liquidcooled 4stroke,1
+301,china,China,renegade duty s,223.0,17.5,16.5,speed,chain,2,110000.0,2023,modern,cruiser,singlecylinder aircooled 4stroke,1
+302,china,China,renegade duty ace,125.0,10.0,9.5,speed,chain,2,90000.0,2023,modern,cruiser,singlecylinder aircooled 4stroke,1
+304,china,China,mqi gt,125.0,11.1,10.5,cvt,automatic,2,149999.0,2022,futuristic,scooter,electric,1
+305,china,China,nqi gts,125.0,9.4,11.8,cvt,automatic,2,159999.0,2022,sleek,scooter,electric,1
+306,china,China,mqi plus,125.0,9.4,11.8,cvt,automatic,2,129999.0,2022,stylish,scooter,electric,1
+307,china,China,nqi sport,125.0,9.4,11.8,cvt,automatic,2,144999.0,2022,sporty,scooter,electric,1
+309,uk,UK,apache 125,125.0,11.5,10.5,cvt,automatic,2,119999.0,2023,modern,street bike,aircooled,1
+310,uk,UK,meteor 125,125.0,11.5,10.5,cvt,automatic,2,129999.0,2023,classic,cruiser,aircooled,1
+311,uk,UK,city 125,125.0,9.5,9.0,cvt,automatic,2,99999.0,2023,urban,scooter,aircooled,1
+312,uk,UK,terrain 125,125.0,11.5,10.5,cvt,automatic,2,139999.0,2023,adventure,trail bike,aircooled,1
+313,uk,UK,sm-xe 125,125.0,15.0,12.0,speed,chain drive,2,149999.0,2023,motocross,street bike,aircooled,1
+314,italy,Italy,superdual t,600.0,54.38,53.5,speed,chain drive,2,680000.0,2023,modern,adventure,liquidcooled,1
+315,italy,Italy,rs 650,650.0,55.0,55.0,speed,chain drive,2,850000.0,2023,modern,naked,liquidcooled,1
+316,italy,Italy,viale 650,650.0,55.0,55.0,speed,chain drive,2,780000.0,2023,classic,cruiser,liquidcooled,1
+317,italy,Italy,racer 125,125.0,11.5,10.5,cvt,automatic,2,120000.0,2023,modern,street bike,aircooled,1
+318,italy,Italy,gran turismo 125,125.0,11.5,10.5,cvt,automatic,2,130000.0,2023,classic,cruiser,aircooled,1
+319,china,China,tc,125.0,11.5,11.5,cvt,automatic,2,140000.0,2023,modern,scooter,electric,1
+320,china,China,tc max,125.0,5.0,11.5,cvt,automatic,2,150000.0,2023,modern,street bike,electric,1
+321,china,China,ts street hunter,125.0,3.0,15.0,cvt,automatic,2,180000.0,2023,modern,street bike,electric,1
+322,china,China,cux,125.0,3.5,14.0,cvt,automatic,2,130000.0,2023,retro,scooter,electric,1
+323,china,China,cpx,125.0,3.5,14.0,cvt,automatic,2,140000.0,2023,modern,scooter,electric,1
+324,uk,UK,interceptor 650,649.0,47.6,52.0,manual,chain drive,2,450000.0,2023,classic,cruiser,aircooled,2
+325,uk,UK,himalayan,411.0,24.5,32.0,manual,chain drive,2,270000.0,2023,adventure,trail bike,aircooled,1
+326,uk,UK,meteor 350,349.0,20.2,27.0,manual,chain drive,2,210000.0,2023,classic,cruiser,aircooled,1
+327,uk,UK,ct 125,125.0,10.5,10.5,cvt,automatic,2,110000.0,2023,retro,scooter,aircooled,1
+328,uk,UK,kent 125,125.0,10.5,10.5,cvt,automatic,2,100000.0,2023,modern,scooter,aircooled,1
+329,italy,Italy,imperiale 400,374.0,21.0,24.5,manual,chain drive,2,234914.0,2020,classic,cruiser,singlecylinder aircooled,1
+330,italy,Italy,leoncino 250,249.2,24.5,21.5,manual,chain drive,2,259900.0,2020,modern,streetfighter,singlecylinder liquidcooled,1
+331,italy,Italy,trk 251,250.9,25.0,21.0,manual,chain drive,2,299000.0,2020,adventure,adventure touring,singlecylinder liquidcooled,1
+332,italy,Italy,trk 502,500.0,47.6,46.0,manual,chain drive,2,469000.0,2017,adventure,adventure touring,paralleltwin liquidcooled,2
+333,italy,Italy,tnt 600i,600.0,85.0,54.0,manual,chain drive,2,619000.0,2018,sport,supersport,paralleltwin liquidcooled,2
+334,italy,Italy,leoncino 500,500.0,47.5,46.0,manual,chain drive,2,560000.0,2019,modern,streetfighter,paralleltwin liquidcooled,2
+335,italy,Italy,502 c,500.0,47.5,46.0,manual,chain drive,2,585000.0,2020,retro,cruiser,paralleltwin liquidcooled,2
+336,italy,Italy,tnt 600rr,600.0,118.0,66.0,manual,chain drive,2,750000.0,2022,sport,supersport,paralleltwin liquidcooled,2
+337,united kingdom,United Kingdom,cadwell 125,125.0,11.0,10.5,manual,chain,2,1499000.0,2023,classic,roadster,single,1
+338,united kingdom,United Kingdom,tempest scrambler 125,125.0,11.0,10.5,manual,chain,2,1549000.0,2023,modern,scrambler,single,1
+339,united kingdom,United Kingdom,tempest roadster 125,125.0,11.0,10.5,manual,chain,2,1499000.0,2023,modern,roadster,single,1
+341,china,China,350r,348.0,38.2,32.8,manual,chain drive,2,325000.0,2022,sporty,naked,singlecylinder liquidcooled,1
+342,china,China,350t,348.0,38.2,32.8,manual,chain drive,2,347000.0,2022,modern,adventure tourer,singlecylinder liquidcooled,1
+343,china,China,350x,348.0,38.2,32.8,manual,chain drive,2,357000.0,2022,rugged,street scrambler,singlecylinder liquidcooled,1
+344,china,China,gk350,348.0,38.2,32.8,manual,chain drive,2,367000.0,2022,classic,cafe racer,singlecylinder liquidcooled,1
+345,uk,UK,akita,125.0,11.83,10.0,manual,chain,1,359000.0,2022,retroinspired,cafe racer,singlecylinder aircooled,1
+346,uk,UK,fsr,250.0,18.5,17.0,manual,chain,1,499000.0,2022,retroinspired,scrambler,singlecylinder aircooled,1
+347,uk,UK,gt-sr,250.0,18.5,17.0,manual,chain,1,549000.0,2022,retroinspired,cafe racer,singlecylinder aircooled,1
+348,uk,UK,gt-ss,250.0,20.0,18.0,manual,chain,1,599000.0,2022,retroinspired,bobber,singlecylinder aircooled,1
+349,uk,UK,hilts,250.0,18.5,17.0,manual,chain,1,529000.0,2022,retroinspired,tracker,singlecylinder aircooled,1
+350,uk,UK,mastiff,250.0,20.0,18.0,manual,chain,1,649000.0,2022,retroinspired,cruiser,singlecylinder aircooled,1
+351,uk,UK,mongrel,250.0,20.0,18.0,manual,chain,1,599000.0,2022,retroinspired,scrambler,singlecylinder aircooled,1
+352,uk,UK,razorback,250.0,20.0,18.0,manual,chain,1,699000.0,2022,retroinspired,bobber,singlecylinder aircooled,1
+353,uk,UK,rs-13,250.0,20.0,18.0,manual,chain,1,679000.0,2022,retroinspired,cafe racer,singlecylinder aircooled,1
+354,uk,UK,sabbath,250.0,20.0,18.0,manual,chain,1,749000.0,2022,retroinspired,cruiser,singlecylinder aircooled,1
+360,italy,Italy,x-cape,649.0,60.8,62.0,manual,parallel twin,2,720000.0,2023,modern,adventure touring,liquidcooled dohc,2
+361,italy,Italy,seiemmezzo 6 ½,649.0,55.7,58.0,manual,parallel twin,2,689000.0,2023,retro,naked,liquidcooled dohc,2
