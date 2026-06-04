@@ -37,37 +37,37 @@ This project demonstrates how machine learning models can predict emotional resp
 ## 🏗️ Architecture Overview
 
 ```
-┌─────────────────────────────────────────────────────────────┐
+┌────────────────────────────────────────────────────────────┐
 │                   Chrome Extension (Frontend)              │
 │  ┌──────────────────────────────────────────────────────┐  │
-│  │  popup.html / popup.js / background.js              │  │
+│  │  popup.html / popup.js / background.js               │  │
 │  │  - User Interface                                    │  │
-│  │  - DOM Content Scraping                            │  │
-│  │  - Message Passing                                 │  │
+│  │  - DOM Content Scraping                              │  │
+│  │  - Message Passing                                   │  │
 │  └──────────────────────────────────────────────────────┘  │
-└─────────────────┬───────────────────────────────────────────┘
+└─────────────────┬──────────────────────────────────────────┘
                   │ HTTP/CORS
-                  ▼
-┌─────────────────────────────────────────────────────────────┐
+                  
+┌────────────────────────────────────────────────────────────┐
 │              FastAPI Backend Server (Port 8000)            │
 │  ┌──────────────────────────────────────────────────────┐  │
 │  │  main.py                                             │  │
-│  │  - FastAPI application                              │  │
-│  │  - CORS middleware                                  │  │
-│  │  - POST /predict endpoint                           │  │
+│  │  - FastAPI application                               │  │
+│  │  - CORS middleware                                   │  │
+│  │  - POST /predict endpoint                            │  │
 │  └──────────────────────────────────────────────────────┘  │
-└─────────────────┬───────────────────────────────────────────┘
+└─────────────────┬──────────────────────────────────────────┘
                   │
                   ▼
-┌─────────────────────────────────────────────────────────────┐
-│         ML Sentiment Prediction Pipeline                    │
+┌────────────────────────────────────────────────────────────┐
+│         ML Sentiment Prediction Pipeline                   │
 │  ┌──────────────────────────────────────────────────────┐  │
 │  │  predictor.py                                        │  │
-│  │  - Logistic Regression Model (trained)             │  │
-│  │  - TF-IDF Vectorization                            │  │
-│  │  - Sentiment Classification (Positive/Negative)    │  │
+│  │  - Logistic Regression Model (trained)               │  │
+│  │  - TF-IDF Vectorization                              │  │
+│  │  - Sentiment Classification (Positive/Negative)      │  │
 │  └──────────────────────────────────────────────────────┘  │
-└─────────────────────────────────────────────────────────────┘
+└────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -119,21 +119,21 @@ User Input Text
        ↓
 ┌─────────────────────────────────┐
 │  Chrome Extension (Frontend)    │
-│  - Extract/Scrape page content │
-│  - Send to backend             │
+│  - Extract/Scrape page content  │
+│  - Send to backend              │
 └─────────────────────────────────┘
        ↓
 ┌─────────────────────────────────┐
 │  FastAPI Backend Server         │
 │  - Receive text via POST /predict
-│  - Pass to ML Pipeline         │
+│  - Pass to ML Pipeline          │
 └─────────────────────────────────┘
        ↓
 ┌─────────────────────────────────┐
 │  ML Prediction Pipeline         │
-│  - TF-IDF Transform            │
-│  - Logistic Regression Predict │
-│  - Return probability score    │
+│  - TF-IDF Transform             │
+│  - Logistic Regression Predict  │
+│  - Return probability score     │
 └─────────────────────────────────┘
        ↓
 Display Results (Positive/Negative Sentiment Score)
