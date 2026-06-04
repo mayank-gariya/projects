@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Local ML Page Scraper & Analyzer",
+  "version": "1.5",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
