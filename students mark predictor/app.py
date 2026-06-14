@@ -9,15 +9,15 @@ st.set_page_config(page_title="Student Score Predictor", page_icon="🎓", layou
 # Load models and data
 @st.cache_resource
 def load_assets():
-    pipe = pickle.load(open(r'data-models\model.pkl', 'rb'))
-    data = pickle.load(open(r'data-models\df3.pkl', 'rb'))
+    pipe = pickle.load(open(r'students mark predictor/data-models/model.pkl', 'rb'))
+    data = pickle.load(open(r'students mark predictor/data-models/df3.pkl', 'rb'))
     return pipe, data
 
 pipe, data = load_assets()
 
 # Title and Subtitle Styling
 st.title('🎓 Student Score Predictor')
-st.image('student-score.png',width=500)
+st.image('students mark predictor/student-score.png',width=500)
 st.markdown('Provide the student details below to instantly predict their academic performance score.')
 
 # --- UPPER SIDE PREDICTION SLOTS ---
