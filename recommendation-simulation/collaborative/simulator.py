@@ -1,8 +1,9 @@
 import streamlit as st
 import pandas as pd
-from demographic.movielens.cache_data import load_movies_data
-from collaborative.state import initialize_state
-from collaborative.engine import taste_profile, recommendation
+from recommendation-simulation.demographic.movielens.cache_data import load_movies_data
+from recommendation-simulation.collaborative.state import initialize_state
+from recommendation-simulation.collaborative.engine import taste_profile, recommendation
+
 
 # 1. Page Configuration
 st.set_page_config(
