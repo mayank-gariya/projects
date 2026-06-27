@@ -1,6 +1,6 @@
 import streamlit as st
-from recommendation-simulation.demographic.movielens.cache_data import load_movies_data
-from recommendation-simulation.contentrcs.recommendation import get_recommendation
+from recommendation_simulation.demographic.movielens.cache_data import load_movies_data
+from recommendation_simulation.contentrcs.recommendation import get_recommendation
 import pandas as pd
 
 st.set_page_config(page_title="Content-Based Recommendation System", page_icon="🎭", layout="wide")

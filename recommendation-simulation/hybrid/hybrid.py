@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
 
-from recommendation-simulation.demographic.movielens.cache_data import load_movies_data
-from recommendation-simulation.contentrcs.recommendation import get_recommendation
-from recommendation-simulation.collaborative.engine import taste_profile, recommendation
+from recommendation_simulation.demographic.movielens.cache_data import load_movies_data
+from recommendation_simulation.contentrcs.recommendation import get_recommendation
+from recommendation_simulation.collaborative.engine import taste_profile, recommendation
 
 st.set_page_config(page_title="Hybrid Recommender", page_icon="🚀", layout="wide")
 
