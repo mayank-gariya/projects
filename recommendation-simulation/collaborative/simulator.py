@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
-from recommendation-simulation.demographic.movielens.cache_data import load_movies_data
-from recommendation-simulation.collaborative.state import initialize_state
-from recommendation-simulation.collaborative.engine import taste_profile, recommendation
+from recommendation_simulation.demographic.movielens.cache_data import load_movies_data
+from recommendation_simulation.collaborative.state import initialize_state
+from recommendation_simulation.collaborative.engine import taste_profile, recommendation
 
 
 # 1. Page Configuration
@@ -153,13 +153,13 @@ with tab1:
             overflow: hidden;
         ">
             <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: #e50914;"></div>
-            <span style="background-color: #e50914; color: white; padding: 4px 12px; border-radius: 4px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px;">Now Showing</span>
+            <span style="background-color: #e50914; color: white; padding: 4px 12px; border-radius: 4px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px;">Now Playing</span>
             <h1 style="margin-top: 15px; margin-bottom: 8px; color: #ffffff; font-size: 2.8rem; font-weight: 800; letter-spacing: -0.5px;">{current_movie['title']}</h1>
             <p style="font-size: 15px; color: #a1a1aa; margin-bottom: 24px; display: flex; align-items: center; gap: 6px;">
                 <span>📅 Released:</span> <strong style="color: #e5e7eb;">{current_movie['release_date']}</strong>
             </p>
             <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                <span style="background: #1f2937; border: 1px solid #374151; padding: 8px 16px; border-radius: 6px; font-size: 14px; color: #f3f4f6; font-weight: 600; letter-spacing: 0.3px;">🎭 {genres_text}</span>
+                <span style="background: #1f2937; border: 1px solid #374151; padding: 8px 16px; border-radius: 6px; font-size: 14px; color: #f3f4f6; font-weight: 600; letter-spacing: 0.3px;">🎭 {genres_text[:40]}</span>
             </div>
         </div>
         """,
@@ -232,7 +232,7 @@ with tab2:
                             box-shadow: 0 10px 20px rgba(0,0,0,0.4);
                         ">
                             <div>
-                                <h4 style="margin: 0; color: #ffffff; font-size: 1.2rem; font-weight: 700; line-height: 1.4; max-height: 65px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">🍿 {row['Movie']}</h4>
+                                <h4 style="margin: 0; color: #ffffff; font-size: 1.2rem; font-weight: 700; line-height: 1.4; max-height: 65px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">{row['Movie']}</h4>
                             </div>
                             <div>
                                 <p style="margin: 0 0 6px 0; font-size: 11px; color: #71717a; text-transform: uppercase; font-weight: 700; letter-spacing: 1px;">Match Affinity</p>
@@ -268,7 +268,7 @@ with tab3:
             """
             <div style="background: #111113; border: 1px solid #232326; padding: 24px; border-radius: 8px; min-height: 200px;">
                 <h3 style="color: #e50914 !important; font-size: 1.25rem; font-weight:700; margin-top:0;">1. Matrix Construction</h3>
-                <p style="color: #a1a1aa; font-size: 14px; margin: 0; line-height:1.6;">Your explicitly logged movie <strong>Likes</strong> are ingested into a sparse interaction grid alongside historical ratings from thousands of streaming profiles.</p>
+                <p style="color: #a1a1aa; font-size: 14px; margin: 0; line-height:1.6;">Your explicitly logged movie <strong>Likes</strong> are ingested into a sparse interaction grid alongside historical user ratings.</p>
             </div>
             """, 
             unsafe_allow_html=True
@@ -278,7 +278,7 @@ with tab3:
             """
             <div style="background: #111113; border: 1px solid #232326; padding: 24px; border-radius: 8px; min-height: 200px;">
                 <h3 style="color: #e50914 !important; font-size: 1.25rem; font-weight:700; margin-top:0;">2. Latent Embeddings</h3>
-                <p style="color: #a1a1aa; font-size: 14px; margin: 0; line-height:1.6;">The algorithmic system processes dense vector dimensions, identifying complex co-occurrence clusters and underlying content relationships hidden from raw text features.</p>
+                <p style="color: #a1a1aa; font-size: 14px; margin: 0; line-height:1.6;">The algorithmic system processes dense vector dimensions, identifying complex co-occurrence clusters and unknown affinities.</p>
             </div>
             """, 
             unsafe_allow_html=True
@@ -288,11 +288,11 @@ with tab3:
             """
             <div style="background: #111113; border: 1px solid #232326; padding: 24px; border-radius: 8px; min-height: 200px;">
                 <h3 style="color: #e50914 !important; font-size: 1.25rem; font-weight:700; margin-top:0;">3. Neighbor Similarity</h3>
-                <p style="color: #a1a1aa; font-size: 14px; margin: 0; line-height:1.6;">Using high-performance mathematical comparisons (such as Cosine or Dot-Product similarity), the engine routes titles preferred by your lookalike demographic vectors straight to your feed.</p>
+                <p style="color: #a1a1aa; font-size: 14px; margin: 0; line-height:1.6;">Using high-performance mathematical comparisons (such as Cosine or Dot-Product similarity), the engine routes you toward hidden gems.</p>
             </div>
             """, 
             unsafe_allow_html=True
         )
 
     st.write("")
-    st.info("💡 **Pro-Tip:** True collaborative systems rely heavily on collective data densities. As you log more unique interaction entries, your neighborhood coordinates continuously adapt to prioritize unexpected hidden gems.")
+    st.info("💡 **Pro-Tip:** True collaborative systems rely heavily on collective data densities. As you log more unique interaction entries, your neighborhood coordinates continuously adapt to reflect your tastes.")
