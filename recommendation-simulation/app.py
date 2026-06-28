@@ -8,11 +8,11 @@ st.set_page_config(
 )
 
 pg = st.navigation([
-    st.Page('home/home.py',title='Home'),
-    st.Page("demographic/main.py", title="Demographic"),
-    st.Page("contentrcs/content.py", title="Content Based"),
-    st.Page("collaborative/simulator.py", title="Collaborative Rec"),
-    st.Page('hybrid/hybrid.py',title='Hybrid Rec')
+    st.Page('recommendation_simulation/home/home.py',title='Home'),
+    st.Page("recommendation_simulatio/demographic/main.py", title="Demographic"),
+    st.Page("recommendation_simulatio/contentrcs/content.py", title="Content Based"),
+    st.Page("recommendation_simulatio/collaborative/simulator.py", title="Collaborative Rec"),
+    st.Page('recommendation_simulatio/hybrid/hybrid.py',title='Hybrid Rec')
 ], position="top")
 
 pg.run()
