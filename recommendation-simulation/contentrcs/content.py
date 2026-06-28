@@ -177,7 +177,7 @@ with tab2:
     st.markdown("Below is the structural breakdown execution for this content-based approach.")
     
     try:
-        with open("contentrcs/learn.py", "r", encoding="utf-8") as f:
+        with open("recommendation_simulation/contentrcs/learn.py", "r", encoding="utf-8") as f:
             demographic_code = f.read()
             
         exec(demographic_code)
