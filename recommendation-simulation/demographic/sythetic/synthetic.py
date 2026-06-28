@@ -1,5 +1,5 @@
 import streamlit as st
-from recommendation-simulation.demographic.sythetic.helper import get_data
+from recommendation_simulation.demographic.sythetic.helper import get_data
 import pandas as pd
 
 occupation_preferences , movies_data_genre = get_data()
