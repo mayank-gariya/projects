@@ -1,14 +1,12 @@
 import streamlit as st
 import pandas as pd
 
-# --- Page Layout & Core Setup (MUST BE FIRST) ---
 st.set_page_config(
     page_title="Demographic Recommendation Simulator", 
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# --- Premium Cinema Dark & Red Theme Custom Styling ---
 st.markdown("""
     <style>
         /* Global Background & Text Customization */
@@ -104,7 +102,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# --- App Header Section ---
 st.markdown("""
 # 🎬 <span style='color: #E50914;'>Demographic</span> Recommendation Simulator
 """, unsafe_allow_html=True)
@@ -112,28 +109,10 @@ st.markdown("A multi-tier sandbox environment for exploring Demographic Filterin
 st.markdown("---")
 
 # --- Tabs Setup ---
-tab_synthetic, tab_movielens, tab_learn = st.tabs([
-    "🧪 Synthetic Workspace", 
+tab_movielens, tab_learn = st.tabs([
     "🍿 MovieLens Production Engine", 
     "📖 Core Concepts"
 ])
-
-# --- Tab 1: Synthetic Demo Workspace ---
-with tab_synthetic:
-    st.subheader("🧪 Isolated Synthetic Testing Environment")
-    st.markdown("Models algorithmic variations and calculates target user similarities using real-time parameter controls.")
-    
-    st.markdown('<div class="execution-container">', unsafe_allow_html=True)
-    try:
-        with open("demographic/sythetic/synthetic.py", "r", encoding="utf-8") as f:
-            demographic_code = f.read()
-            
-        exec(demographic_code)
-        
-    except FileNotFoundError:
-        st.error("❌ Component Missing: Unable to load the dynamic workspace engine.") 
-        st.info("Ensure that `demographic/sythetic/synthetic.py` is present in your root directory.")
-    st.markdown('</div>', unsafe_allow_html=True)
 
 # --- Tab 2: MovieLens Production Engine ---
 with tab_movielens:
@@ -177,7 +156,6 @@ with tab_learn:
         
         st.caption("💡 Highly effective for mitigating Cold Start issues when fresh users join a platform.")
 
-    # Render learning script outputs in its own distinct execution box cleanly below
     st.markdown('<div class="execution-container">', unsafe_allow_html=True)
     try:
         with open("demographic/learn/learn.py", "r", encoding="utf-8") as f:
