@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
-from recommendation-simulation.demographic.movielens.cache_data import load_movies_data
+from recommendation_simulation.demographic.movielens.cache_data import load_movies_data
 
 # get the data 
 genre_cols = [
