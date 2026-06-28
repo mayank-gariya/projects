@@ -2,6 +2,11 @@ import streamlit as st
 import pandas as pd
 from demographic.movielens.cache_data import load_movies_data
 from demographic.movielens.recommendation import demographic_recommendation
+from pathlib import Path
+
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+DATA_DIR = BASE_DIR / "ml-100k"
 
 st.set_page_config(layout='wide')
 
@@ -29,7 +34,11 @@ def ui():
         st.metric("Occupations", users["occupation"].nunique())
 
     with col5:
-        df = pd.read_csv('ml-100k/u.genre', sep="|", names=["Genre", "counts"])
+        df = pd.read_csv(
+            DATA_DIR / "u.genre",
+            sep="|",
+            names=["Genre", "counts"]
+        )
         st.metric(label="Total Genres", value=len(df))
 
     col1 , col2 ,col3 , col4= st.columns(4)
@@ -39,7 +48,10 @@ def ui():
         st.dataframe(df)
 
     with col2:
-        occ_df = pd.read_csv('ml-100k/u.occupation',names=["occupations"])
+        occ_df = pd.read_csv(
+            DATA_DIR / "u.occupation",
+            names=["occupations"]
+        )
         st.subheader('Occupations')
         st.dataframe(occ_df)
 
