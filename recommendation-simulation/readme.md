@@ -1,5 +1,5 @@
 # 🎬 Recommendation System Simulator
-
+## [live demo](https://projects-fxshxsmgmr7qhmf2zeijrx.streamlit.app/)
 ## Overview
 
 This project is an interactive **Recommendation System Simulator** built using **Python** and **Streamlit** to help users understand how different recommendation algorithms work in real-world applications such as Netflix, Amazon, Spotify, and YouTube.
@@ -16,6 +16,7 @@ The project uses the **MovieLens 100K (ML-100K)** dataset and provides both prac
 ---
 
 ## 🚀 Features
+## [live demo](https://projects-fxshxsmgmr7qhmf2zeijrx.streamlit.app/)
 
 ### 📊 Demographic Filtering
 
@@ -214,5 +215,7 @@ The primary goal of this project is to provide a hands-on learning experience fo
 * Support for multiple datasets
 
 ---
+
+## [live demo](https://projects-fxshxsmgmr7qhmf2zeijrx.streamlit.app/)
 
 ⭐ If you found this project useful, consider giving it a star and exploring how recommendation systems power modern digital platforms.
