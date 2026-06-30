@@ -3,12 +3,22 @@ import streamlit as st
 # Set page config
 st.set_page_config(page_title="Time Series Learning Hub", layout="wide")
 
-# Title
-st.title("📈 Time Series Learning Hub")
-st.markdown("Explore key concepts in time series analysis through interactive expanders.")
 
 st.markdown(
-    '### <i class="fa-brands fa-github"></i> View my [GitHub Repository](https://github.com/mayank-gariya)', 
+    """
+    <div style="text-align: center; padding: 2rem 0 1rem 0;">
+        <h1 style="font-size: 4rem; margin-bottom: 0;">🏫 Learning Hub</h1>
+        <p style="font-size: 1.5rem; color: #888;">Time Series Analysis & Forecasting Learning</p>
+        <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto;">
+            Built with <strong>Streamlit</strong>, <strong>yfinance</strong>, and <strong>statsmodels</strong> – 
+            explore, test, and forecast your data with ease.
+        </p>
+        <br>
+        <a href="https://github.com/mayank-gariya" target="_blank" style="text-decoration: none;">
+            <img src="https://img.shields.io/badge/GitHub-mayank--gariya-181717?style=for-the-badge&logo=github" alt="GitHub">
+        </a>
+    </div>
+    """,
     unsafe_allow_html=True
 )
 
