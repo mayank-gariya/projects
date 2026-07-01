@@ -1,5 +1,8 @@
 import streamlit as st
 from PIL import Image 
+from pathlib import Path
+
+IMAGE_PATH = Path(__file__).parent / "src" / "assits" / "streamlit image.png"
 
 st.set_page_config(
     page_title="ChronoCast – Time Series Analysis",
@@ -46,12 +49,12 @@ with col1:
     )
 
 with col2:
-    st.image(
-        'src/assits/streamlit image.png',
-        width=300,
-        caption="Powered by Streamlit"
-    )
-
+   if IMAGE_PATH.exists():
+        st.image(
+            str(IMAGE_PATH),
+            width=300,
+            caption="Powered by Streamlit"
+        )
 
 st.markdown("---")
 st.subheader("🚀 Key Features")
